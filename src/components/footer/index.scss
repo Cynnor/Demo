@@ -1,0 +1,37 @@
+.footer{
+    padding: 10px;
+    // margin-top: 100px;
+    background-color: black;
+    text-align: left;
+    color: gray;
+    
+
+    &_basic{
+        display: flex;
+        margin-left: 200px;
+
+    }
+    
+    &_answer{
+        display: flex;
+        margin-left: 200px;
+        margin-right: 200px;
+        text-align: center;
+        font-size: 17px;
+        text-decoration: underline;
+        ul{
+            display: flex;
+            gap: 150px;
+            text-align: left;
+            li{
+            list-style: none;
+        }  
+        }  
+    }
+    &_basic1{
+        display: flex;
+        margin-left: 200px;
+        font-size: 15px ;
+        align-items: center;
+    }
+}
