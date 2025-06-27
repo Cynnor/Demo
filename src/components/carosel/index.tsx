@@ -32,7 +32,10 @@ function Carosel() {
             <img className="img" src="https://cdn2.fptshop.com.vn/unsafe/Uploads/images/tin-tuc/165597/Originals/phim-tinh-cam-han-quoc-hay-nhat-14-min.jpg"></img>
         </SwiperSlide>
         <h1>
-            Huy
+            Huyne
+        </h1>
+        <h1>
+            Huyne
         </h1>
       </Swiper>
     </div>)
