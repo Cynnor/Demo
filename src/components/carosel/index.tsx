@@ -37,6 +37,9 @@ function Carosel() {
         <h1>
             Huyne
         </h1>
+        <h1>
+            Huyne
+        </h1>
       </Swiper>
     </div>)
 }
