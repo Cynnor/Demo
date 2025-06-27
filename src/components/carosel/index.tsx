@@ -31,9 +31,6 @@ function Carosel() {
         <SwiperSlide>
             <img className="img" src="https://cdn2.fptshop.com.vn/unsafe/Uploads/images/tin-tuc/165597/Originals/phim-tinh-cam-han-quoc-hay-nhat-14-min.jpg"></img>
         </SwiperSlide>
-        <SwiperSlide>
-            <img className="img" src="https://phunuvietnam.mediacdn.vn/179072216278405120/2023/12/4/5-17016800073362866771-1701694363102-17016943639121034826469.jpg"></img>
-            </SwiperSlide>
       </Swiper>
     </div>)
 }
