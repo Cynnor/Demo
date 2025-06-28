@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    padding: 20px;
+    &_left{
+        img{
+            width: 600px;
+            height: 40vh;
+        }
+    }
+    &_right{
+        width: 600px;
+        height: 40vh;
+        h2{
+            display: flex;
+            justify-content: center;
+        }
+        .form{
+            margin-top: 20px;
+            .bt-login{
+                margin-right: 10px;
+            }
+        }
+    }
+}

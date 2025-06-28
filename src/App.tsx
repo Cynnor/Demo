@@ -1,42 +1,49 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom"
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./layout";
 import About from "./pages/about";
 import Home from "./pages/home";
 import Movies from "./pages/movies";
 import TiviShow from "./pages/tvShow";
-
-
+import Register from "./pages/register";
+import Login from "./pages/login";
 
 //api
 
 function TodoApp() {
   const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Layout/>,
-    children: [
-      {
-        path: "/",
-        element: <Home/>
-      },
-      {
-        path: "/about",
-        element: <About/>
-      },
-      {
-        path: "/movies",
-        element: <Movies/>
-      },
-      {
-        path: "/tvshow",
-        element: <TiviShow/>
-      },
-    ]
-  },
-]);
+    {
+      path: "/",
+      element: <Layout />,
+      children: [
+        {
+          path: "/",
+          element: <Home />,
+        },
+        {
+          path: "/about",
+          element: <About />,
+        },
+        {
+          path: "/movies",
+          element: <Movies />,
+        },
+        {
+          path: "/tvshow",
+          element: <TiviShow />,
+        },
+        {
+          path: "/register",
+          element: <Register />,
+        },
+        {
+          path: "/login",
+          element: <Login />,
+        },
+      ],
+    },
+  ]);
 
   return <RouterProvider router={router} />;
 }
 
-export default TodoApp
-
+export default TodoApp;
