@@ -1,13 +1,12 @@
-import Carosel from '../../components/carosel'
-import './index.scss'
+import Carosel from "../../components/carosel";
+import "./index.scss";
 
 function TiviShow() {
   return (
     <div>
-    <Carosel></Carosel>    
-
+      <Carosel></Carosel>
     </div>
-  )
+  );
 }
 
-export default TiviShow
+export default TiviShow;
