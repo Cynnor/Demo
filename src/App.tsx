@@ -6,6 +6,8 @@ import TiviShow from "./pages/tvShow";
 import Register from "./pages/register";
 import Login from "./pages/login";
 import MyList from "./pages/myList";
+import AuthLayout from "./AuthLayout";
+import Profile from "./pages/profile";
 
 //api
 
@@ -28,16 +30,26 @@ function TodoApp() {
           element: <TiviShow />,
         },
         {
+          path: "/mylist",
+          element: <MyList />,
+        },
+        {
+          path: "/profile",
+          element: <Profile />,
+        },
+      ],
+    },
+    {
+      path: "/",
+      element: <AuthLayout />,
+      children: [
+        {
           path: "/register",
           element: <Register />,
         },
         {
           path: "/login",
           element: <Login />,
-        },
-        {
-          path: "/mylist",
-          element: <MyList />,
         },
       ],
     },
