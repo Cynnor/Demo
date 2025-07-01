@@ -12,6 +12,13 @@ import { useNavigate } from "react-router-dom";
 function Header() {
   const [isSearch, setIsSearch] = useState(false);
   const navigate = useNavigate();
+
+  const handleUserClick = () => {
+    const token = localStorage.getItem("accessToken");
+    if (token) {
+      navigate("/profile");
+    } else navigate("/login");
+  };
   return (
     <header className="header">
       <div className="header_left">
@@ -50,7 +57,11 @@ function Header() {
         <li className="icon">
           <BellOutlined />
         </li>
-        <li className="icon" onClick={() => navigate("/login")}>
+        <li
+          className="icon"
+          style={{ cursor: "pointer" }}
+          onClick={handleUserClick}
+        >
           <UserOutlined />
         </li>
       </div>

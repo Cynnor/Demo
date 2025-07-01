@@ -2,8 +2,9 @@ import { Button, DatePicker, Form, Input, Select } from "antd";
 import "./index.scss";
 import FormItem from "antd/es/form/FormItem";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
+
 import dayjs from "dayjs";
+import api from "../../config/api";
 // npm i dayjs
 
 function Register() {
@@ -17,8 +18,8 @@ function Register() {
         : null,
     };
     try {
-      const responce = await axios.post(
-        "https://bookingpod.azurewebsites.net/api/v1/authentication/register",
+      const responce = await api.post(
+        "authentication/register",
         formaterValues
       );
       console.log(responce.data);
