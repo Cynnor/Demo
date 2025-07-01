@@ -12,7 +12,7 @@ function Carosel() {
   return (
     <div className="carosel-container">
       <Swiper
-        autoplay={{ delay: 2500, disableOnInteraction: false }}
+        autoplay={{ delay: 2000, disableOnInteraction: false }}
         navigation={true}
         modules={[Navigation, Autoplay]}
         className="carosel"
@@ -47,9 +47,6 @@ function Carosel() {
             src="https://cdn2.fptshop.com.vn/unsafe/Uploads/images/tin-tuc/165597/Originals/phim-tinh-cam-han-quoc-hay-nhat-14-min.jpg"
           ></img>
         </SwiperSlide>
-        <h1>Huyne</h1>
-        <h1>Huyne</h1>
-        <h1>Huyne</h1>
       </Swiper>
     </div>
   );
